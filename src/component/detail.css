@@ -1,0 +1,29 @@
+.detail{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.detail-title-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.detail-title-div h2{
+    color: #475f7b;
+    text-decoration: underline;
+}
+.return-div h3{
+color: #475f7b;
+}
+.return-div p{
+    font-size: 1.2em;
+}
+.return-div{
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width:750px){
+    .detail-title-div{
+        text-align: center;
+    }
+}

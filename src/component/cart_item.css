@@ -1,0 +1,34 @@
+.cart_item {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+  }
+  .header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header h3{
+    margin-right: 60px;
+  }
+  .cart_item div {
+    width: 100%;
+  }
+  .cart_item div p{
+    margin-bottom: 4px;
+  }
+  .cart_item button {
+    color: #fff;
+    border: none; 
+    cursor: pointer;
+    transition: all ease-in;
+  }
+  
+  .cart_item button:hover {
+   transform: scale(1.09);
+  }
+  

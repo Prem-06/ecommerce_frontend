@@ -1,0 +1,42 @@
+*{
+    font-family: -apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+.view_more{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.btn-div button{
+   
+    background: linear-gradient(20deg, #127bcc, #93cbf6 99%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px 10px 25px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+.btn-div button:hover{
+    background: linear-gradient(20deg, #127bcc, #6f9ec2 99%);
+}
+
+.view-detail{
+    margin: 0px 30px 0px 30px;
+}
+.title-tag{
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.about p{
+    font-size: 1.3em;
+}
+.list-div ul li{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
