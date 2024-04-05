@@ -8,7 +8,7 @@ function App() {
   const [data,setdata]=useState([])
 useEffect(()=>{
 async function getdata(){
-   await fetch('http://localhost:3000/getdata',{
+   await fetch('https://ecommerce-backend-dehb.onrender.com/getdata',{
     method:"get",
     headers:{
       'Content-Type': 'application/json'

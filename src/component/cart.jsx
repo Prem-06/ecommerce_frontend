@@ -35,7 +35,7 @@ useEffect(()=>{
           return;
       }
 
-        await fetch('http://localhost:3000/checkout',{
+        await fetch('https://ecommerce-backend-dehb.onrender.com/checkout',{
           method:"post",
           headers:{
             'Content-Type': 'application/json'
