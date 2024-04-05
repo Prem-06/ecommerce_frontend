@@ -4,8 +4,10 @@ import { useEffect,useState } from 'react'
 import Navbar from './component/navbar'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ClipLoader from "react-spinners/ClipLoader";
 function App() {
   const [data,setdata]=useState([])
+  const [data_reach,setdata_reach]=useState(false)
 useEffect(()=>{
 async function getdata(){
    await fetch('https://ecommerce-backend-dehb.onrender.com/getdata',{
@@ -17,6 +19,7 @@ async function getdata(){
     return res.json();
    }).then((val)=>{
     setdata(val.data)
+    setdata_reach(true)
    }).catch((err)=>{
     console.log(err)
    })
@@ -29,14 +32,18 @@ getdata()
 <Navbar/>
 <ToastContainer />
       {
-        data.map((d,k)=>{
+       data_reach? ( data.map((d,k)=>{
           return <Fish_component data={d}/>
-        })
+        })):<ClipLoader
+        color="#419ae1"
+        size={150}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
       }
-      
       </div>
    
   )
 }
-
+{/* <MoonLoader color="#36d7b7" /> */}
 export default App
