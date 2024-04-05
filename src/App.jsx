@@ -36,7 +36,7 @@ getdata()
           return <Fish_component data={d}/>
         })):<ClipLoader
         color="#419ae1"
-        size={150}
+        size={100}
         aria-label="Loading Spinner"
         data-testid="loader"
       />
